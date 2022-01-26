@@ -37,8 +37,7 @@ module CarrierWave
                 end
 
                 def url
-                    path = URI.encode "#{TencentCosSdk.conf.parent_path.to_s}/#{@path}"
-                    "https://zoosg-1256792782.file.myqcloud.com#{path}"
+                    "https://zoosg-1256792782.file.myqcloud.com/#{@path}"
                 end
 
                 def delete
