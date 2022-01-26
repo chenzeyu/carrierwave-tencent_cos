@@ -37,7 +37,7 @@ module CarrierWave
                 end
 
                 def url
-                    "#{@uploader.asset_host}#{uri path}"
+                    "https://zoosg-1256792782.file.myqcloud.com#{uri path}"
                 end
 
                 def delete
