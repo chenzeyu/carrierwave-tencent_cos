@@ -37,7 +37,7 @@ module CarrierWave
                 end
 
                 def url
-                    TencentCosSdk.url @path
+                    "#{@uploader.asset_host}#{uri path}"
                 end
 
                 def delete
